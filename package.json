@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-express-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "node ./server.js",
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "node ./server.js",
+    "start:prod": "yarn build && NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.15.2",
+    "next": "^2.1.0",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3"
+  },
+  "devDependencies": {
+  }
+}
