@@ -9,6 +9,10 @@ app.prepare()
     .then(() => {
         const server = express()
 
+        server.get('/post/list', (req, res) => {
+            return app.render(req, res, '/post/list', req.query)
+        })
+
         server.get('/post/:id', (req, res) => {
             req.query.id = req.params.id
             return app.render(req, res, '/post/view', req.query)
